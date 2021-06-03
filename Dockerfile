@@ -15,12 +15,9 @@ COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY apache2.conf /etc/apache2/apache2.conf
 COPY vtiger-ssl.* /etc/apache2/ssl/
 
-ADD init.sh /init.sh
-RUN chmod +x /init.sh
-ENTRYPOINT ["/init.sh"]
 
 RUN mkdir -p /var/www/html/vtiger
-RUN service apache2 start
+RUN service apache2 start && service cron start
 
 
 WORKDIR /app
