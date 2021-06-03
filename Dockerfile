@@ -17,7 +17,8 @@ COPY vtiger-ssl.* /etc/apache2/ssl/
 
 
 RUN mkdir -p /var/www/html/vtiger
-RUN service apache2 start && service cron start
+RUN service apache2 start
+RUN service cron start
 
 
 WORKDIR /app
