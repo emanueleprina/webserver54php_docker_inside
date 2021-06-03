@@ -21,3 +21,4 @@ RUN service apache2 start
 
 WORKDIR /app
 
+ENTRYPOINT service cron start && /bin/bash
