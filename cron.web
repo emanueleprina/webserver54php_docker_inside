@@ -1,0 +1,6 @@
+* * * * * /var/www/html/vtiger/vtigerst/cron/executecron.sh
+* * * * * /var/www/html/vtiger/vtigerst/cron/vtigercron.sh
+* * * * * /var/www/html/vtiger/vtigerst/cron/sendreminder.sh
+* * * * * /var/www/html/vtiger/vtigerqa/cron/executecron.sh
+* * * * * /var/www/html/vtiger/vtigerqa/cron/vtigercron.sh
+* * * * * /var/www/html/vtiger/vtigerqa/cron/sendreminder.sh
