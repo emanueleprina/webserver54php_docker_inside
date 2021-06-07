@@ -1,1 +1,1 @@
-service cron start
+service cron start &
