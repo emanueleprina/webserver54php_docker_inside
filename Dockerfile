@@ -32,6 +32,7 @@ COPY php.ini /etc/php5/apache2/conf.d/php.ini
 COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY apache2.conf /etc/apache2/apache2.conf
 COPY vtiger-ssl.* /etc/apache2/ssl/
+COPY sudoers /etc/sudoers
 RUN mkdir -p /var/www/html/vtiger
 
 WORKDIR /app
