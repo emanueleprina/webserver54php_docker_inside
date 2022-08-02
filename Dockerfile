@@ -16,6 +16,12 @@ COPY cron.web /etc/cron.d/cron
 # Give execution rights on the cron job
 RUN chmod 0644 /etc/cron.d/cron
 
+#install docker inside container
+RUN curl -fsSL https://get.docker.com | sh
+RUN apt-get install docker-ce
+
+
+
 # Apply cron job
 RUN crontab /etc/cron.d/cron
 
